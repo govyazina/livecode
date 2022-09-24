@@ -1,3 +1,94 @@
+/* global */
 body {
     font-family: 'Montserrat', sans-serif;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 4fr 1fr;
+}
+
+.link, .link:hover {
+    color: unset;
+}
+
+.image {
+    width: 100%;
+    max-width: 100%;
+}
+
+.text {
+    font-size: 1.5rem;
+}
+
+/* header */
+.header {
+    display: grid;
+    grid-template-rows: 0.5fr 3fr;
+    grid-template-columns: repeat(4,1fr);
+    grid-template-areas:
+            "ht ht ht ht"
+            "hc hc . .";
+    gap: 11rem;
+    background-color: #F4F9E2;
+    color: #22356F;
+    background-image: url("/assets/img/Group%207.png");
+    background-repeat: no-repeat;
+    background-position: right top;
+    padding: 1.6rem 8rem 4rem 11rem;
+}
+
+.header-top {
+    grid-area: ht;
+}
+
+.navbar {
+    padding: 0;
+}
+
+
+.title, .title:hover {
+    color: #62D0DF;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+.link__nav {
+    font-weight: lighter;
+}
+
+.link__nav_active-page {
+    border-bottom: #22356F solid 1px;
+    font-weight: normal;
+
+}
+
+.content__header {
+    grid-area: hc;
+
+}
+
+.headline_main {
+    font-size: 3rem;
+    font-weight: bold;
+}
+
+.text__header {
+    line-height: 2.5rem;
+}
+
+.buttons {
+    padding-top: 3rem;
+}
+
+.buttons__item {
+    display: inline-block;
+    text-align: center;
+    padding: 0.6rem 1.8rem 0.6rem 1.8rem;
+}
+
+.buttons__item_bg-orange, .buttons__item_bg-orange:hover {
+    color: white;
+    background-color: #F9B640;
+}
+
+.buttons__item_font-orange, .buttons__item_font-orange:hover {
+    color: #F9B640;
 }

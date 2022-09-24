@@ -8,35 +8,44 @@
     <link rel="stylesheet" href="./assets/styles/normalize.css">
     <link rel="stylesheet" href="./assets/styles/styles.css">
 </head>
+
 <body>
 
 <header class="header">
     <section class="header-top">
-        <div class="title">
-            <a class="title__link" href="#">Thrivetalk</a>
-        </div>
-        <nav class="nav">
-            <a href="#" class="link nav__link nav__link_active-page">Home</a>
-            <a href="#" class="link nav__link">About</a>
-            <a href="#" class="link nav__link">Services</a>
-            <a href="#" class="link nav__link">Blog</a>
-        </nav>
-        <div class="button">
+        <nav class="navbar navbar-expand-lg">
+            <a class="link navbar-brand title" href="#">Thrivetalk</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Переключатель навигации">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-center" id="navbarNavAltMarkup">
+                <div class="navbar-nav">
+                    <a class="link link__nav link__nav_active-page nav-link" href="#">Home</a>
+                    <a class="link link__nav nav-link" href="#">About</a>
+                    <a class="link link__nav nav-link" href="#">Services</a>
+                    <a class="link link__nav nav-link" href="#">Blog</a>
+
+                </div>
+            </div>
+            <div class="button">
             <a class="button__contact btn btn-info" href="#" role="button">CONTACT US</a></div>
+        </nav>
+
     </section>
 
-    <section class="content">
+    <section class="content content__header">
         <div class="title">
             Thrivetalk
         </div>
-        <h1>HELPING YOU THRIVE IN ALL AREAS OF LIFE</h1>
-        <p>Our highly talented therapists can help you with a range of issues including relationships, sex, PTSD, depression, social anxiety, or even just caring for yourself more.</p>
+        <h1 class="headline headline_main">HELPING YOU THRIVE IN ALL AREAS OF LIFE</h1>
+        <p class="text text__header">Our highly talented therapists can help you with a range of issues including relationships, sex, PTSD, depression, social anxiety, or even just caring for yourself more.</p>
         <div class="buttons">
-            <a href="#" class="link ">WHO AM I</a>
-            <a href="#" class="link ">WHAT DO I DO</a>
+            <a href="#" class="link buttons__item buttons__item_bg-orange">WHO AM I</a>
+            <a href="#" class="link buttons__item buttons__item_font-orange">WHAT DO I DO</a>
         </div>
     </section>
-    <img src="./assets/img/Group%207.png" alt=""/>
+
+
 </header>
 
 <main class="main">
