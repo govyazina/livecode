@@ -4,6 +4,7 @@ body {
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: 1fr 4fr 1fr;
+
 }
 
 .link, .link:hover {
@@ -28,16 +29,17 @@ body {
             "ht ht ht ht"
             "hc hc . .";
     gap: 11rem;
-    background-color: #F4F9E2;
-    color: #22356F;
-    background-image: url("/assets/img/Group%207.png");
+    /*background-color: #F4F9E2;*/
+    background-image: url("/assets/img/Group%207.png"), linear-gradient(to right, #F4F9E2 77%, white 23%);
     background-repeat: no-repeat;
     background-position: right top;
+    color: #22356F;
     padding: 1.6rem 8rem 4rem 11rem;
 }
 
 .header-top {
     grid-area: ht;
+
 }
 
 .navbar {
@@ -58,6 +60,13 @@ body {
     border-bottom: #22356F solid 1px;
     font-weight: normal;
 
+}
+
+.button__contact {
+    border-radius: 50px;
+    font-size: 0.8rem;
+    padding: 1.25rem 1.8rem 1.25rem 1.8rem;
+    width: 9rem;
 }
 
 .content__header {
